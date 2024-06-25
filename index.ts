@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api', (req, res) => {
-  res.json({"msg": "Hello Grupo Redis"});
+  res.json({"msg": "Hello Grupo Reditos"});
 });
 
 app.listen(port, () => {
