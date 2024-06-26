@@ -4,7 +4,7 @@ pipeline {
     environment {
 
         DOCKERHUB_CREDENTIALS = credentials('dockerhub_credentials')
-        DOCKER_IMAGE = 'mnarvaezm96/nodejs_app'
+        DOCKER_IMAGE = 'mnarvaezm96/app-node'
         GIT_REPO = 'https://github.com/mnarvaezm96/app-node'
     }
 
@@ -12,7 +12,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone github repo
-                git branch: 'main', url: "${env.GIT_REPO}"
+                git branch: 'main', url: "${GIT_REPO}"
             }
         }
 
