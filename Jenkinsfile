@@ -2,8 +2,7 @@ pipeline {
     agent any
 
     environment {
-
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub_credentials')
+ 
         DOCKER_IMAGE = 'mnarvaezm96/app-node'
         GIT_REPO = 'https://github.com/mnarvaezm96/app-node'
     }
