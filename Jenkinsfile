@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone github repo
-                git branch: 'main', url: "${GIT_REPO}"
+                git branch: 'main', url: "${env.GIT_REPO}"
             }
         }
 
