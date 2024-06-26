@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('https://dckr_pat_BnOgebslcq8Q9uVJZguyIdy-yks@hub.docker.com/u/mnarvaezm96')
         DOCKER_IMAGE = 'mnarvaezm96/app-node'
         GIT_REPO = 'https://github.com/mnarvaezm96/app-node'
     }
@@ -11,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone github repo
-                git branch: 'main', url: "${GIT_REPO}"
+                git branch: 'main', url: "${env.GIT_REPO}"
             }
         }
 
