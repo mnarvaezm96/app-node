@@ -4,7 +4,7 @@ pipeline {
     environment {
 
         DOCKERHUB_CREDENTIALS = credentials('dockerhub_credentials')
-        DOCKER_IMAGE = 'dockerhub_username/nodejs_app'
+        DOCKER_IMAGE = 'mnarvaezm96/nodejs_app'
         GIT_REPO = 'https://github.com/mnarvaezm96/app-node'
     }
 
